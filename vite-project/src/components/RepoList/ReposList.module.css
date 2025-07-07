@@ -1,0 +1,34 @@
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.listItem {
+    list-style: none;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante espaçamento entre conteúdo e link */
+    min-height: 220px; /* Ajuste conforme necessário para altura uniforme */
+}
+
+.itemName b, .itemLanguage b  {
+    margin-right:6px ;
+}
+
+.itemLink {
+    background-color: var(--corPrincipal);
+    color: var(--corSecundaria);
+    text-align: center;
+    font-weight: bold;
+    margin-top: .5rem;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%; /* Ocupa toda a largura do card */
+    box-sizing: border-box;
+    align-self: center; /* Centraliza horizontalmente no card */
+    display: block; /* Garante centralização do texto */
+}
